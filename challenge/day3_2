@@ -1,0 +1,16 @@
+def ghost_act(quot, divi):
+    rest = quot % divi
+    if rest != 0:
+        return ghost_act(divi, rest)
+    else:
+        return divi
+
+values = input()
+value_list = values.split(" ")
+# print(len(value_list))
+for i in range(len(value_list)):
+    value_list[i] = int(value_list[i])
+quot = max(value_list)
+divi = min(value_list)
+
+print(ghost_act(quot, divi))
