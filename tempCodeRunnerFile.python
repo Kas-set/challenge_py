@@ -1,0 +1,6 @@
+a=input('saisir votre nom: ')
+b=('saisir votre age: ')
+int(b)
+print(f"Bonjpour Mr{a} vous avez {b} ans , l'année prochaine vous aurez {b+1}")
+
+ 

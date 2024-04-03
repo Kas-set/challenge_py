@@ -1,0 +1,24 @@
+Les Variables:
+    -Types de Variables,
+    -Les types d'opérateurs,
+    -La fonction type(),
+    -Des fonctions de conversions types: str(),int(),float(),
+    -Les fonctions min(), max() //min(1, 2, 3) =>1,
+    
+    NB: Opérations entre les caractères: On peut faire l'addittion entre deux chaines de caracatères et  la multiplication entre une chaine de caractère et un int mais pas la division dans les deux sens 
+
+    -L'utilisation de l'argument <end="">
+    ainsi que l'argument <sep="">  dans la fonction print()
+
+    -La méthode ".format()"
+
+Les listes 
+        -Méthode <.append()>
+        -Les tranches
+        -Range(début, fin, pas)/list()
+        -min(), max(), sum()
+        -len()
+Les boucles 
+        -La syntaxe,
+        -range()
+
