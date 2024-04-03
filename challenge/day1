@@ -1,0 +1,18 @@
+valeurs_entree = input("type the values: ")
+if len(valeurs_entree) !=5:
+  print(" the programm acceppts 3 values") 
+else:
+    values = valeurs_entree.split()
+    if not all(value.isdigit() for value in values):
+        print("Les valeurs ne sont pas des entiers.")
+    else:
+        val1 = int(valeurs_entree[0])
+        val2 = int(valeurs_entree[2])
+        val3 = int(valeurs_entree[4])
+        
+        sum = val1 + val2
+        if(val3 == sum):
+            print("correct!")
+        else:
+            print("wrong!")
+    

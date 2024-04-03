@@ -1,0 +1,19 @@
+#fonction qui retourne une liste des diviseurs premiers d'un nombre
+def diviseurs(n:int):
+    div_list = []
+    # Gérer les multiples de 2
+    while n % 2 == 0:
+        div_list.append(2)
+        n //= 2
+    # Traiter les autres nombres impairs
+    for i in range(3, int(n**0.5) + 1, 2):
+        while n % i == 0:
+            div_list.append(i)
+            n //= i
+    # Si le nombre restant est supérieur à 2, il est également premier
+    if n > 2:
+        div_list.append(n)
+    return div_list 
+value = int(input())
+# print(diviseurs(value))
+print(len(diviseurs(value)))
