@@ -1,3 +1,4 @@
+
 def recup_reponse(choix):    
     while True:
         reponse = input(f"Saisir la reponse(entre 1 et {len(choix)}): ")
