@@ -1,12 +1,26 @@
 score = 0
+def recup_reponse(choix):    
+    reponse = input(f"Saisir la reponse(entre 1 et {len(choix)}): ")
+    try:
+        reponse = int(reponse)
+        if 1<= reponse <= len(choix):
+            return reponse
+        else:
+            print(f"ERREUE: veuillez entrer un nombre entre 1 et {len(choix)}")
+
+    except:
+        print("ERREU: veuillez entrer un nombre entier")
+        return recup_reponse()
+
 def poser_question(question):
     global score
     print("Question: ",question[0])
     choix = question[1]
     for i in range(len(choix)):
         print(" ",i+1,"-",choix[i])
-        
-    reponse = input(f"Saisir la reponse(entre 1 et {len(choix)}): ")
+    
+    reponse = recup_reponse(choix)
+           
     bnn_reponse = choix.index(question[2])+1
     print(bnn_reponse)
     print(reponse)
