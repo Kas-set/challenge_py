@@ -1,0 +1,24 @@
+score = 0
+def poser_question(question):
+    global score
+    print("Question: ",question[0])
+    choix = question[1]
+    for i in range(len(choix)):
+        print(" ",i+1,"-",choix[i])
+        
+    reponse = input(f"Saisir la reponse(entre 1 et {len(choix)}): ")
+    bnn_reponse = choix.index(question[2])+1
+    print(bnn_reponse)
+    print(reponse)
+    if reponse == bnn_reponse:
+        print("Bonne reponse!")
+        score +=1
+    else:
+        print("Mauvaise reponse")
+    print("Score: ",score)
+    
+qst1 = ("Quelle est la capitale du Togo? ",
+        ("Lome", "Karra", "Cinkasse"),
+        "Lome"
+        )
+poser_question(qst1)
