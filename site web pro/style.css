@@ -161,7 +161,7 @@ div.section-triangle-blanche{
     background: url("./assets/images/triangle3.svg") no-repeat  center/cover;
     font-size:20px;
     min-height:300px;
-    border:1px solid red;
+    /* border:1px solid red; */
     display:flex;
     flex-direction:column;
     align-items:center;   
@@ -178,7 +178,6 @@ div.section-triangle-blanche{
     justify-content:space-around;
     align-items:center;
     margin-top:1%;
-    border:1px solid red;
 }
 .section-grise-2-container a{
     color:blue;
@@ -189,4 +188,6 @@ div.section-triangle-blanche{
     width:5px;
     background-color:var(--color1) ;
 }
-
+.frame-div{
+    height:200px;    
+}
