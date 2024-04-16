@@ -12,7 +12,9 @@ body{
 }
 .cover{
     position:relative;
-    border:1px solid red;
+    top:O%;
+    /* border:1px solid red; */
+    border:0px solid transparent;
     /* background :url('./assets/images/cover_overlay3.jpg') no-repeat left/100%; */
     background:url('./assets/images/cover4.jpg') no-repeat center/100%;
     min-height:360px;
@@ -84,17 +86,89 @@ a.contact-btn:hover{
 }
 #profil{
     position:relative;
+    left:45%;
     z-index:2;
     border:3px solid white;
     height:150px;
     display:block;
     border-radius:50%;
-    margin:50px auto 35px auto;
+    /* margin:50px auto 35px auto; */
 }
-div.section-triangle{
-    background-image: url("./assets/images/triangle.svg") no-repeat bottom/100%;
-    /* background-color:#F4F4F4; */
-    background-color:white;
-    height:400px;
+div.section-triangle1{
+    background: url("./assets/images/triangle1.svg") no-repeat  bottom/cover;
+    font-size:20px;
+    height:200px;
+    overflow:auto;
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;      
+
+    /* padding:0px 25px; */
+}
+
+div.separator{
+    background-color:#979797;
+    margin-top:10px;
+    height:2px;
+    width:150px;
+}
+.paragraphe-section{
+    align-text:center;
+    line-height:1;
+    margin:2% 25%;
+    /* font-weight:bolder; */
+    /* border:1px solid red; */
+    
+}
+div.section-triangle-blanche{
+    font-size:20px;
+     min-height:300px;
+     /* border:1px solid red; */
+     text-align:center;
+}
+.aboutparagraphe img{
+    border-radius:8px;
+}
+.aboutparagraphe{
+     text-align:left;
+     padding:10px;
+     margin:2% 25%;
+     /* border:1px solid red; */
+     display:flex;
+     flex-direction:space-between;
+     gap:15%;
+ 
+}
+.col40{
+    width:60%;
+}
+.col40 p{
+    display:inline-block;
+    height:25%;
+    padding-left:5px;
+    border-left:3px groove var(--color1);
+    margin-bottom:5%;
+}
+.col40 a{
+    margin:10px;
+    text-decoration:none;
+    color:blue;
+}
+.col40 a:hover{
+    color:var(--color1);
+}
+.section-grise-2{
+    background: url("./assets/images/triangle3.svg") no-repeat  center/cover;
+    font-size:20px;
+    height:300px;
+    border:1px solid red;
+    display:flex;
+    flex-direction:column;
+    align-items:center;   
+
+}
+.section-grise-2-container {
+    margin-top:6%;
     border:1px solid red;
 }
